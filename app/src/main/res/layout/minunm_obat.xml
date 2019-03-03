@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_minumObat"
+            android:text="Minum Obat"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_semibold"
+            android:textColor="@color/white"
+            android:background="@drawable/ripple_effect_red"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_kunjungan"
+            android:text="Kunjungan Dokter"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_semibold"
+            android:background="@drawable/ripple_effect_bluee"
+            android:layout_margin="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

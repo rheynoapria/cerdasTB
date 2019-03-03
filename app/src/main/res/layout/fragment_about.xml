@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/v_logo"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:src="@drawable/ic_healt"/>
+
+            <TextView
+                android:id="@+id/txt_app"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textColor="@color/solidRed"
+                android:text="Cerdas TB"
+                android:fontFamily="@font/crossten_bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                />
+            <TextView
+                android:id="@+id/txt_versi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Versi 0.1"
+                />
+            <TextView
+                android:id="@+id/txt_judul_pengembang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:background="@color/solidRed"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Profile Kami" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/foto"/>
+            <TextView
+                android:id="@+id/txt_data_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_bold"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/solidRed"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:layout_marginTop="10dp"
+                android:text="Kelompok 4 PBL" />
+
+            <TextView
+                android:id="@+id/txt_univ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_regular"
+                android:paddingHorizontal="10dp"
+                android:paddingBottom="10dp"
+                android:textColor="@color/solidGrey"
+                android:gravity="center"
+                android:textSize="16dp"
+                android:text="Universitas Islam Negeri Syarif Hidayatullah" />
+            <TextView
+                android:id="@+id/txt_judul_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/solidRed"
+                android:textColor="@android:color/white"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Tentang Aplikasi Cerdas TB" />
+
+            <TextView
+                android:id="@+id/txt_data_pengembang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="@color/solidGrey"
+                android:fontFamily="@font/nunito_regular"
+                android:text="@string/about"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

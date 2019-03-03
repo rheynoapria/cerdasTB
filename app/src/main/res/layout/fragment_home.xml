@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentHome">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_hill">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bg_home"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="10"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3.1">
+
+
+            <ImageView
+                android:id="@+id/ic_gender"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_male"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_below="@id/ic_gender"
+                android:id="@+id/txt_nama"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:fontFamily="@font/nunito_bold"
+                android:text="Rheyno Apria Pratama"
+                android:textColor="@color/blue"/>
+
+            <LinearLayout
+                android:layout_below="@id/txt_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_below="@id/txt_nama"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mulai Pengobatan"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textColor="@color/solidGrey"/>
+
+                <TextView
+                    android:layout_below="@id/txt_nama"
+                    android:id="@+id/txt_diagnosa"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00/00/0000"
+                    android:fontFamily="@font/nunito_regular"
+                    android:textColor="@color/solidGrey"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6.5"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="27dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="401dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/first"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="left"
+                        android:paddingVertical="2dp"
+                        android:text="Jenis Kelamin "
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_jkel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="Laki - Laki "
+                        android:textColor="@color/solidGrey"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-50px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="left"
+                        android:paddingVertical="2dp"
+                        android:text="Tanggal Lahir "
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_tanggalLahir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="01/02/1998"
+                        android:textColor="@color/solidGrey"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-50px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="left"
+                        android:paddingVertical="2dp"
+                        android:text="Kota"
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_kota"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="Bekasi"
+                        android:textColor="@color/solidGrey"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-50px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:gravity="left"
+                        android:paddingVertical="2dp"
+                        android:text="Nomor HP"
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_noHP"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="+628983881291"
+                        android:textColor="@color/solidGrey"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-50px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="0dp"
+                        android:gravity="left"
+                        android:paddingVertical="2dp"
+                        android:text="Jenis TB"
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_jtb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="TB MDR Regimen Jangka Pendek ( 12 Bulan )"
+                        android:textColor="@color/solidGrey"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-30px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="18dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/EditTextStyle"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginTop="4dp"
+                        android:gravity="left"
+                        android:text="Sudah Minum Obat ?"
+                        android:textColor="@color/solidRed"
+                        android:textSize="15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_minumObat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="right"
+                        android:text="-"
+                        android:textColor="@color/solidGrey"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="-25px"
+                    android:layout_marginRight="10dp"
+                    android:background="@color/view"></View>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+
+</FrameLayout>

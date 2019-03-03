@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">Cerdas TB</string>
+    <string-array name="slide_text">
+        <item>Aplikasi ini dapat mengingatkan anda untuk\nminum obat, dan akan mempercepat\nproses penyembuhan Tuberkolosis</item>
+        <item>Anda akan diingatkan setiap seminggu\nsekali untuk jadwal bertemu dengan dokter</item>
+        <item>Sejauh apa anda mengenal penyakit TBC\ndari beberapa test yang telah kami sediakan</item>
+    </string-array>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <array name="genderImg">
+        <item>@drawable/ic_male</item>
+        <item>@drawable/ic_female</item>
+    </array>
+
+
+    <string name="about">"Assalamualaikum wr wb Hallo, perkenalkan kami dari kelompok 4 Pengalaman Belajar Lapangan program studi Kesehatan Masyarakat UIN Syarif Hidayatullah Jakarta.
+
+        Kami beranggotakan Desti Rachmani, Almas Shadrina, Dwi Yustika Hidayati, Rahmadhani Al Ghiffari Putri, Monica Elysa, Rilian Vara Ayuningtyas, dan Fitria Rizkia Hayati, dan dosen pembimbing fakultas kami Dr. Yuli Amran, S.KM, M.KM beliau merupakan salah satu dosen pengajar di kampus kami UIN Syarif Hidayatullah Jakarta. Beliau yang membimbing dan mengarahkan kami dalam Pengalaman Belajar Lapangan kali ini.
+
+        Tak lupa kami ingin mengucapkan banyak terimakasih kepada semua pihak yang terlibat atas bantuannya dalam kegiatan Pengalaman Belajar Lapangan ini.
+
+        Teruntuk puskesmas Pondok Aren yang telah memberikan kesempatan pada kami untuk melakukan Pengalaman Belajar Lapangan, kesempatan ini tidak akan kami lupakan,
+        kemudian untuk pembimbing lapangan kami Putri handayani S.KM terima kasih banyak atas bimbingannya selama kami PBL kami akan selalu mengingat nasihat ka putri
+
+        Kemudian untuk Greget Dev yang sudah mensupport kami dalam pembuatan aplikasi ini sehingga intervensi ini dapat berjalan, (ok)kemudian kami ucapkan terima kasih
+
+        tidak lupa kami juga mengucapkan terima kasih kepada
+        ibu kader RW 011 yang sudah membantu kami sehingga semua intervensi kami dapat berjalan dengan lancar.
+
+        Kami memohon maaf bila masih ada pihak yang tidak tersebutkandalam halaman ini, sekali lagi kami ucapkan terima kasih atas bantuannya dalam kelancaran kegiatan ini. Akhir kata kami ucapkan Wassalamualaikum wr wb"</string>
+
+    <string name="material_calendar_monday">S</string>
+    <string name="material_calendar_tuesday">S</string>
+    <string name="material_calendar_wednesday">R</string>
+    <string name="material_calendar_thursday">K</string>
+    <string name="material_calendar_friday">J</string>
+    <string name="material_calendar_saturday">S</string>
+    <string name="material_calendar_sunday">M</string>
+
+    <array name="material_calendar_months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_batal"
+            android:text="Batalkan"
+            android:textColor="@color/blue"
+            android:background="@drawable/ripple_effect_blue"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="17dp"
+            android:layout_margin="12dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_simpan"
+            android:text="Atur Waktu"
+            android:textColor="@color/white"
+            android:background="@drawable/ripple_effect_bluee"
+            android:layout_margin="12dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="17dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

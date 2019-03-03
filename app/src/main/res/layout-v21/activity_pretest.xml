@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Pretest"
+    android:background="@drawable/quiz_bg">
+
+    <RelativeLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="8dp"
+            android:progress="2"
+            android:max="5"
+            android:layout_width="match_parent"
+            style="@android:style/Widget.DeviceDefault.Light.ProgressBar.Horizontal"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFFFFF"
+            android:progressBackgroundTint="#C7C7C7"/>
+
+        <TextView
+            android:id="@+id/txt_totalQuestion"
+            android:layout_below="@id/progressBar"
+            android:text="1 / 15"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/pertanyaan_text"
+            android:layout_below="@id/txt_totalQuestion"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:layout_margin="30dp"
+            style="@style/label_title"
+            android:text="Apa efek samping ringan ketika meminum obat TBC?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_marginTop="180dp"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ic_round"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/textScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="30dp"
+                    android:textColor="@color/solidRed"
+                    android:fontFamily="@font/nunito_bold"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="220dp"
+
+                    />
+
+            </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:id="@+id/btn_jawabanA"
+            android:text="Jawaban A"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:layout_margin="15dp"
+            android:padding="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_wht"/>
+
+        <Button
+            android:id="@+id/btn_jawabanB"
+            android:text="Jawaban B"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_ylw"/>
+
+        <Button
+            android:id="@+id/btn_jawabanC"
+            android:text="Jawaban C"
+            android:layout_margin="15dp"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:padding="5dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_effect_blue"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

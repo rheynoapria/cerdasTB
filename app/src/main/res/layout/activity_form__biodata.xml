@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form_Biodata">
+
+
+
+    <TextView
+        android:id="@+id/titleBiodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:textColor="@color/red"
+        android:text="Let's Get Started"
+        android:textSize="18dp"
+        android:fontFamily="@font/crossten_bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+    <ImageView
+        android:layout_width="150px"
+        android:layout_height="150px"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_healt"/>
+
+    <!--<android.support.v7.widget.CardView-->
+
+        <!--android:layout_below="@id/titleBiodata"-->
+        <!--android:id="@+id/canvas"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="480dp"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--app:cardElevation="8dp"-->
+        <!--app:cardCornerRadius="5dp">-->
+
+        <RelativeLayout
+            android:id="@+id/layout_biodata"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:paddingTop="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:layout_marginTop="50dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No. HP"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/nunito_bold"
+            android:textColor="@color/hint"
+            android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="550dp">
+
+                <LinearLayout
+                    android:id="@+id/nohp_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:orientation="horizontal">
+
+                <EditText
+                    android:editable="false"
+                    android:layout_width="80dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/idNum"
+                    android:drawableLeft="@drawable/ic_indo"
+                    android:drawablePadding="5dp"
+                    android:text="+62"
+                    android:textSize="15dp"
+                    style="@style/EditTextStyle"
+                    android:inputType="none"/>
+                <EditText
+                    android:id="@+id/noHP"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15dp"
+                    style="@style/EditTextStyle"
+                    android:inputType="number"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_below="@id/nohp_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/hint"
+                    android:textSize="15dp"/>
+
+                <RadioGroup
+                    android:id="@+id/gender_radio"
+                    android:layout_below="@id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_male"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pria"
+                        android:textColor="@color/hint"
+                        android:fontFamily="@font/lato"
+                        android:layout_marginRight="30dp"
+                        android:onClick="genderClicked"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_female"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hint"
+                        android:text="Wanita"
+                        android:fontFamily="@font/lato"
+                        android:onClick="genderClicked"/>
+                </RadioGroup>
+
+
+                <TextView
+                    android:id="@+id/born"
+                    android:layout_below="@id/gender_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/hint"
+                    android:textSize="15dp"></TextView>
+
+                <EditText
+                    android:id="@+id/bornDate"
+                    android:drawablePadding="10dp"
+                    android:layout_below="@id/born"
+                    android:layout_width="match_parent"
+                    android:drawableLeft="@drawable/ic_calendar"
+                    android:paddingBottom="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15dp"
+                    style="@style/EditTextStyle"
+                    android:onClick="showDateDialog"/>
+
+                <TextView
+                    android:id="@+id/city"
+                    android:layout_below="@id/bornDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asal Kota"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/hint"
+                    android:textSize="15dp"></TextView>
+
+                <EditText
+                    android:id="@+id/asalKota"
+                    android:drawablePadding="10dp"
+                    android:layout_below="@id/city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:textSize="15dp"
+                    style="@style/EditTextStyle"/>
+
+                <TextView
+                    android:id="@+id/txt_jenisTB"
+                    android:layout_below="@id/asalKota"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Jenis TB"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/nunito_bold"
+                    android:textColor="@color/hint"
+                    android:textSize="15dp"/>
+
+                <RadioGroup
+                    android:id="@+id/jenisTB"
+                    android:layout_below="@id/txt_jenisTB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radio_TB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TB"
+                        android:textSize="15dp"
+                        android:textColor="@color/hint"
+                        android:fontFamily="@font/nunito_regular"
+                        android:layout_marginRight="30dp"
+                        android:onClick="TBclicked"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_TB_MDR"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hint"
+                        android:text="TB MDR Regimen Jangka Pendek ( 12 Bulan )"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textSize="15dp"
+                        android:onClick="TBclicked"/>
+                    <RadioButton
+                        android:id="@+id/radio_TB_MDR2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hint"
+                        android:text="TB MDR Regimen Individu ( 24 Bulan )"
+                        android:fontFamily="@font/nunito_regular"
+                        android:textSize="15dp"
+                        android:onClick="TBclicked"/>
+                    <RadioButton
+                        android:id="@+id/radio_non_tb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/hint"
+                        android:text="Non TB"
+                        android:textSize="15dp"
+                        android:fontFamily="@font/nunito_regular"
+                        android:onClick="TBclicked"/>
+                </RadioGroup>
+
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_below="@id/layout_biodata"
+        android:layout_width="350dp"
+        android:layout_height="35dp"
+        android:text="Ayo Mulai"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        style="@style/Btn_slide"
+        android:textAllCaps="false"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ripple_effect_red"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>

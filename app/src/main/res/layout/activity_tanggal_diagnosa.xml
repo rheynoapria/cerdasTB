@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TanggalDiagnosa"
+    android:background="@drawable/ic_hill">
+
+    <ImageView
+        android:id="@+id/ic_diagnosa"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:src="@drawable/ic_diagnosa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:layout_below="@id/ic_diagnosa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/tgl_diagnosa"
+            android:layout_width="match_parent"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/ripple_effect_white"
+            android:layout_height="35dp"
+            android:elevation="4dp"
+            android:paddingLeft="20dp"
+            android:hint="klik untuk set tanggal diagnosa"
+            />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_below="@id/tgl_diagnosa"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:text="Submit"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            style="@style/Btn_slide"
+            android:textAllCaps="false"
+            android:background="@drawable/ripple_effect_red"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

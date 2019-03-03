@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".CalenderFragment">
+
+    <com.applandeo.materialcalendarview.CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:headerColor="@color/solidRed"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_today"
+            android:background="@color/Transparentwhite"
+            android:text="Coba"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_minumObat"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/medicine" />
+
+            <TextView
+                android:id="@+id/txt_minumObat"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Anda belum minum Obat"
+                android:layout_below="@+id/desc_image"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_kunjunganDokter"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/doctor" />
+
+            <TextView
+                android:id="@+id/txt_kunjunganDokter"
+                android:layout_weight="9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Lakukan kunjungan dokter setiap senin dan kamis"
+                android:layout_below="@+id/desc_image"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
